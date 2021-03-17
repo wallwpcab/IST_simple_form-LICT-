@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input_data" name="input_data">
+<button id="submit" onclick="age()">submit</button>
+<h1>result: </h1>
+<p id="output"></p>
+
+<script>
+    function age() {
+        var input = document.getElementById('input_data').value;
+        if (input>17){
+            document.getElementById('output').innerHTML="Eligible for Vote";
+        }else {
+            document.getElementById('output').innerHTML="Not Eligible for Vote";
+        }
+        document.getElementById('input_data').value=" ";
+        console.log(input);
+    }
+</script>
+</body>
+</html>

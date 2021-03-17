@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="date" id="input_data" name="input_data">
+<button id="submit" onclick="age()">submit</button>
+<h1>result: </h1>
+<p id="output"></p>
+
+<script>
+    function age() {
+        var input = document.getElementById('input_data').value;
+        var input_format = new Date( input );
+        var input_year=input_format.getFullYear();
+
+        var current_date = new Date();
+        var current_year = current_date.getFullYear();
+        var total_age=current_year - input_year;
+
+        if (total_age>17){
+            document.getElementById('output').innerHTML="Eligible for Vote";
+        }else {
+            document.getElementById('output').innerHTML="Not Eligible for Vote";
+        }
+        document.getElementById('input_data').value=" ";
+        console.log(n);
+    }
+</script>
+</body>
+</html>
+</body>
+</html>

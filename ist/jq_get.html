@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="bttn1" type="submit">Button1</button>
+<p id="check">this is some bold text.</p>
+<input type="text" id="name" value="Hasib">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready( function () {
+        $("#bttn1").click(function () {
+//            alert($("#name").attr("value"));
+//            $("#name").attr({"placeholder":"my name is hasib"});
+            $("#check").append("append some text.");
+            $("#check").prepend("prepend some text.");
+        });
+    });
+</script>
+</body>
+</html>
